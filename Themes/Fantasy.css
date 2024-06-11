@@ -1,4 +1,12 @@
-﻿/*Fantasy Theme By IceOfWraith. Edited by ssfdre38 for 2.5*/
+/**
+ * @file
+ * Title: Fantasy
+ * Description: A Pink Fantasy theme.
+ * Author: James Manker (Iceofwraith) Edited By Daniel Elliott (ssfdre38)
+ * Platform: For AMP (Application Management Panel) By Cubecoders Limited
+ * Version: 1.5.0 For AMP 2.5
+ * Image Copyright: Background by Yuki https://github.com/IceOfWraith/Yuki No copyright.
+ **/
 
 @keyframes slidein {
   0% { inset-block-start: -100%; padding-block-start:60px; }
@@ -49,11 +57,6 @@ button {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
 }
-.ServerEntry.NewServerEntry,
-.bgGreen:hover,
-button:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
 
 /*Buttons*/
 .button {
@@ -69,6 +72,36 @@ input[type=submit]:hover,
   transition: background-color 0.3s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
+  line-height: 0px !important;
+}
+
+button:hover {
+  background-color: rgba(0,0,0,0.5);
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  line-height: 0px !important;
+}
+
+button:disabled {
+  background-color: rgba(0,0,0,0.5);
+  background: rgb(88, 0, 88) !important;
+}
+
+.secureLoginButton{
+  line-height: 0px !important;
+  margin-inline-end: 0px !important;
+  padding: 0px !important;
+  background-position: 4px 4px !important;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+}
+
+.secureLoginButton:hover{
+  line-height: 0px !important;
+  margin-inline-end: 0px !important;
+  padding: 0px !important;
+  background-position: 4px 4px !important;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
 }
 
 /*Overall Button Hover*/
@@ -82,6 +115,10 @@ input[type=submit]:hover,
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: none;
+}
+
+.bgGreen:active {
+  line-height: 0px !important;
 }
 
 .settingsGroup .groupBody .settingLabel .settingDescription,
@@ -113,12 +150,18 @@ input[type=submit]:hover,
   animation: fadeIn 2s;
 }
 
+.bgGreen:hover {
+  border: 1px black !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  line-height: 0px !important;
+}
+
 #barTop {
   background-color: rgba(0,0,0,0.8);
 }
 
 #userInfo {
-  background: none !important;
+  background: rgba(0,0,0,0.8) !important;
 }
 
 .ServerGroup.Platform-1,
@@ -188,7 +231,7 @@ input[type="checkbox"]:checked + span::after {
 /*New status bar in the instance view*/
 .ServerEntryStatus {
   background-color: darkmagenta !important;
-  border: none;
+  border: none !important;
 }
 
 /*Buttons inside new instance view box*/
@@ -209,37 +252,14 @@ input[type="checkbox"]:checked + span::after {
   background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: none;
+  border-radius: 16px !important;
 }
+.ServerEntry.NewServerEntry,
+.bgGreen:hover,
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
 
-/*Disabled buttons*/
-button:disabled,
-input[type=button]:disabled,
-input[type=submit]:disabled,
-.button:disabled,
-button:disabled:hover,
-input[type=button]:disabled:hover,
-input[type=submit]:disabled:hover,
-.button:disabled:hover,
-button:disabled:active,
-input[type=button]:disabled:active,
-input[type=submit]:disabled:active,
-.button:disabled:active,
-button[enabled=false],
-input[type=button][enabled=false],
-input[type=submit][enabled=false],
-.button[enabled=false],
-button[enabled=false]:hover,
-input[type=button][enabled=false]:hover,
-input[type=submit][enabled=false]:hover,
-.button[enabled=false]:hover,
-button[enabled=false]:active,
-input[type=button][enabled=false]:active,
-input[type=submit][enabled=false]:active,
-.button[enabled=false]:active {
-  background-color: rgb(86, 0, 86) !important;
-  border: 1px solid #333 !important;
-  cursor: default !important;
-}
 
 /*Side Icons*/
 button.slideIcon,
@@ -286,7 +306,7 @@ input[type=submit].slideIcon,
 /*Pop-up Infomation Panel*/
 .modalpanel {
   background-color: #222;
-  border-block-end: 4px solid #444;
+  border-block-end: 0px solid #444;
   transition: fadeIn 1s !important;
   inline-size: 750px;
   transform: translateY(-100%);
@@ -294,4 +314,37 @@ input[type=submit].slideIcon,
   margin-inline-end: auto;
   max-inline-size: 95%;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modalpanel.visible {
+  transform: translate(-50%, -50%);
+}
+
+/*Settings Tab*/
+.tabHeaderContainer
+{
+  background: rgb(2,0,36) !important;
+  background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
+  border-block-end: none;
+  border-radius: 4px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)  !important;
+}
+
+.tabHeaderContainer .tabHeader.active
+{
+  background: rgb(160, 0, 160) !important;
+}
+
+.tabHeaderContainer .tabHeader:hover
+{
+  background: rgb(100, 0, 100) !important;
+}
+
+/*Loading Flash*/
+.easeLoad{
+  transition: opacity 2s ease;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
