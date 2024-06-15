@@ -323,7 +323,6 @@ input[type=submit].slideIcon,
 /*Settings Tab*/
 .tabHeaderContainer
 {
-  background: rgb(2,0,36) !important;
   background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(135,21,119,1) 43%, rgba(101,21,71,1) 100%) !important;
   border-block-end: none;
   border-radius: 4px !important;
@@ -338,6 +337,11 @@ input[type=submit].slideIcon,
 .tabHeaderContainer .tabHeader:hover
 {
   background: rgb(100, 0, 100) !important;
+}
+
+.settingsGroup .groupBody .settingContainer
+{
+  border-radius: 16px !important;
 }
 
 /*Loading Flash*/
